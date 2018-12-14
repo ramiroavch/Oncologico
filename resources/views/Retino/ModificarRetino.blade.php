@@ -40,27 +40,27 @@
 	</span></a>
 	<ul class="nav nav-second-level">
     	<li>
-    		<a href="/home">Buscar Historia</a>
+    		<a href="{{route('home')"}}>Buscar Historia</a>
     	</li>
-    	<li class="">
-    		<a>
-    			<span class="nav-label">Agregar Historia
-    			</span>
-    			<span class="fa arrow">
-				</span>
-			</a>
-			<ul class="nav nav-third-level">
-				<li class="">
-    				<a href="/AgregarHistoria">Oncologico</a>
-    			</li>
-    			<li>
-    				<a href="/AgregarHistoriaNo">No Oncologico</a>
-    			</li>
-			</ul>
+    </ul>
+</li>
+<li>
+    <a href=""><i class="fa fa-files-o"></i><span class="nav-label">Agregar</span><span class="fa arrow">
+	</span></a>
+	<ul class="nav nav-second-level">
+		<li>
+    		<a href="{{route('AgregarHistoria')}}">Historia Oncologica</a>
+    	</li>
+    	<li>
+    		<a href="{{route('AgregarHistoriaNo')}}">Historia No Oncologica</a>
     	</li>
 	</ul>
 </li>
-@endsection
+@if (auth()->user()->email=='admin@gmail.com')
+<li>
+	<a href="{{route('register')}}"><i class="fa fa-plus"></i><span class="nav-label">Crear Usuario</span>
+</li>
+@endif
 @section('content')
 <div class="wrapper wrapper-content">
     <div class="row">

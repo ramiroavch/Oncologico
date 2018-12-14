@@ -51,6 +51,11 @@
     	</li>
 	</ul>
 </li>
+@if (auth()->user()->email=='admin@gmail.com')
+<li>
+	<a href="{{route('register')}}"><i class="fa fa-plus"></i><span class="nav-label">Crear Usuario</span>
+</li>
+@endif
 @endsection
 @section('content')
 <div class="wrapper wrapper-content">
