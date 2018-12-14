@@ -8,6 +8,7 @@
 @endsection
 
 @section('title')
+<title>Modificar Retinoblastoma</title>
 <form class="form-group" method="POST" action="/AgregarRetino/{{$historia}}">
     @method('PUT')
     @csrf

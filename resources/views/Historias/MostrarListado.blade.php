@@ -11,6 +11,7 @@
 @endsection
 
 @section('title')
+<title>Ver Historias</title>
 <!--<form class="form-group" method="GET" action="VerHistoria" enctype="multipart/form-data">
  @csrf-->
 <h2 class="font-bold">Busqueda de Pacientes</h2>

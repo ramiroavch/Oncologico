@@ -11,6 +11,7 @@
 @endsection
 
 @section('title')
+<title>Agregar Historia</title>
 <form class="form-group" method="POST" action="VerHistoria" enctype="multipart/form-data">
     @csrf
 <h2 class="font-bold">Agregar Nueva Historia Oncológica</h2>

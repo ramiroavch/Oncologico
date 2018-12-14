@@ -8,6 +8,7 @@
 @endsection
 
 @section('title')
+<title>Tablero</title>
 <form class="form-group" method="GET" action="VerHistoria">
  @csrf
 <h2 class="font-bold">Buscar Historia</h2>
@@ -43,30 +44,29 @@
     	</li>
 	</ul>
 </li>
+@if (auth()->user()->email=='admin@gmail.com')
+<li>
+	<a href=""><i class="fa fa-plus"></i><span class="nav-label">Crear Usuario</span>
+</li>
+@endif
 @endsection
 @section('content')
 <div class="wrapper wrapper-content">
 	<div class="row  border-bottom white-bg dashboard-header">
 		<div class="row">
-			<div class="form-group col-sm-2">
+			<div class="form-group col-md-4">
         		<input type="text" class="form-control input-sm" name="num_historia" placeholder="N° Historia">	
-			</div> 
-			<div class="form-group col-sm-2">
+
         		<input type="text" class="form-control input-sm" name="cedula" placeholder="C.I">	
 			</div> 
-			<div class="form-group col-sm-3">
+			<div class="form-group col-md-4">
         		<input type="text" class="form-control input-sm" name="nombre1" placeholder="Primer Nombre">	
-			</div>   
-			<div class="form-group col-sm-3">
+
 				<input type="text" class="form-control input-sm" name="nombre2" placeholder="Segundo Nombre">
 			</div> 
-        </div> 
-
-        <div class="row">
-        	<div class="form-group col-sm-3">
+        	<div class="form-group col-md-4">
 				<input type="text" class="form-control input-sm" name="apellido1" placeholder="Primer Apellido">
-			</div>
-			<div class="form-group col-sm-3">
+
 				<input type="text" class="form-control input-sm" name="apellido2" placeholder="Segundo Apellido">
 			</div>
         </div>

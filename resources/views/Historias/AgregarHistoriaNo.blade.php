@@ -10,6 +10,7 @@
 @endsection
 
 @section('title')
+<title>Agregar Historia</title>
 <form class="form-group" method="POST" action="HistoriaNo" enctype="multipart/form-data">
     @csrf
 <h2 class="font-bold">Agregar Nueva Historia No Oncológica</h2>

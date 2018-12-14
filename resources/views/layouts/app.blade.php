@@ -25,7 +25,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="gray-bg" style="justify-content:center; align-items:center">
+<body class="gray-bg" style="justify-content:center; align-items:center; display:flex; flex-direction:row; flex-wrap:wrap">
     <div id="app">
     
         <div class="middle-box text-center loginscreen animated fadeInDown" >

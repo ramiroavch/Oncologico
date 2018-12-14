@@ -7,6 +7,7 @@
 @endsection
 
 @section('title')
+<title>Ver Historia</title>
 <div class="row">
 <h2 class="font-bold">Ver Historia Oncológica</h2>
 </div>

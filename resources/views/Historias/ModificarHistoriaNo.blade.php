@@ -10,6 +10,7 @@
 @endsection
 
 @section('title')
+<title>Modificar Historia</title>
 <form class="form-group" method="POST" action="{{route('HistoriaNo.update',$historia->num_h)}}">
     @method('PUT')
     @csrf

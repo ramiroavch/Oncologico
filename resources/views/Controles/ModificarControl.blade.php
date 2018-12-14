@@ -8,6 +8,7 @@
 @endsection
 
 @section('title')
+<title>Modificar Control</title>
 <form class="form-group" method="POST" action="{{route('AgregarControl.update',$control->num_control)}}">
     @method('PUT')
     @csrf

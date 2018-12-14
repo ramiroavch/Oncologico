@@ -8,6 +8,7 @@
 @endsection
 
 @section('title')
+<title>Ver Retinoblastoma</title>
 <div class="row">
     <h2 class="font-bold">Retinoblastoma</h2>
 </div>

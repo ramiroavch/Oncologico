@@ -10,6 +10,7 @@
 @endsection
 
 @section('title')
+<title>Ver Historia</title>
 <h2 class="font-bold">Ver Historia No Oncológica</h2>
 @if ($errors->any())
     <div class="alert alert-danger">

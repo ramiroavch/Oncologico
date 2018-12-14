@@ -8,6 +8,7 @@
 @endsection
 
 @section('title')
+<title>Ver Control</title>
 <div class="row">
 <h2 class="font-bold">Ver Control</h2>
 </div>

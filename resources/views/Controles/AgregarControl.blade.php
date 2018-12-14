@@ -8,6 +8,7 @@
 @endsection
 
 @section('title')
+<title>Agregar Control</title>
 <form class="form-group" method="POST" action="AgregarControl">
     @csrf
 <h2 class="font-bold">Agregar Nuevo Control</h2>

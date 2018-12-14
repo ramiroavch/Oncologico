@@ -8,6 +8,7 @@
 @endsection
 
 @section('title')
+<title>Agregar Retinoblastoma</title>
 <form class="form-group" method="POST" action="AgregarRetino">
     @csrf
 <div class="row">
