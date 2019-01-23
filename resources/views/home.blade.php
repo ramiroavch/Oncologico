@@ -54,20 +54,29 @@
 <div class="wrapper wrapper-content">
 	<div class="row  border-bottom white-bg dashboard-header">
 		<div class="row">
-			<div class="form-group col-md-4">
-        		<input type="text" class="form-control input-sm" name="num_historia" placeholder="N° Historia">	
-
-        		<input type="text" class="form-control input-sm" name="cedula" placeholder="C.I">	
+			<div class="col-md-4">
+				<div class="form-group">
+					<input type="text" class="form-control input-sm" name="num_historia" placeholder="N° Historia">	
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control input-sm" name="cedula" placeholder="C.I">	
+				</div>
+			</div> 	
+			<div class="col-md-4">
+				<div class="form-group">
+					<input type="text" class="form-control input-sm" name="nombre1" placeholder="Primer Nombre">	
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control input-sm" name="nombre2" placeholder="Segundo Nombre">
+				</div>
 			</div> 
-			<div class="form-group col-md-4">
-        		<input type="text" class="form-control input-sm" name="nombre1" placeholder="Primer Nombre">	
-
-				<input type="text" class="form-control input-sm" name="nombre2" placeholder="Segundo Nombre">
-			</div> 
-        	<div class="form-group col-md-4">
-				<input type="text" class="form-control input-sm" name="apellido1" placeholder="Primer Apellido">
-
-				<input type="text" class="form-control input-sm" name="apellido2" placeholder="Segundo Apellido">
+        	<div class="col-md-4">
+				<div class="form-group">
+					<input type="text" class="form-control input-sm" name="apellido1" placeholder="Primer Apellido">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control input-sm" name="apellido2" placeholder="Segundo Apellido">
+				</div>
 			</div>
         </div>
         <div class="form-group">
