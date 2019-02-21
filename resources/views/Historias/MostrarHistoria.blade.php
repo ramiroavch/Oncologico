@@ -507,7 +507,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-3">
                     <div class="form-group">     
-                        
+                        <textarea readonly class="form-control" style="resize:none;" rows="2" name="diagnos">{{$historia->fondo_ojo}}</textarea> 
                     </div>
                 </div>
             </div>
