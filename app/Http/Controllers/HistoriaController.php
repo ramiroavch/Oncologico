@@ -330,6 +330,7 @@ class HistoriaController extends Controller
     {
         //dd($request->all());
         $historia=DB::table('h__oncols')->where('num_h','=',$id)->get()->first();
+        $exist=DB::table('retinoblastomas')->where('historia_id','=',$historia->id)->exists();
         $new=H_Oncol::findOrFail($historia->id);
         $paciente=DB::table('pacientes')->where('historia_id','=',$historia->id)->get()->first();
         $new2=Paciente::findOrFail($paciente->id);
@@ -439,9 +440,11 @@ class HistoriaController extends Controller
         try
         {
             $new2->save();
+            return view('Historias.MostrarHistoria',['paciente'=>$paciente,'historia'=>$historia,'retino'=>$exist]);
         }
         catch(\Exception $e)
         {
+            dd($e);
             return redirect()->back()->withErrors(['errorshow' => 'Error al guardar el paciente']);
         }
         return redirect()->back();

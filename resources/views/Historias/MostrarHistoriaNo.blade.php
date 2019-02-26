@@ -93,229 +93,344 @@
                     <label>Segundo Apellido: {{$paciente->apellido2}}</label>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control input-sm" name="tlf" placeholder="Teléfono">
+                    <label>Teléfono: {{$paciente->tlf}}</label>
                 </div>
             </div>
         </div>
-
-        <div class="col-lg-4 col-sm-3">
-            <div class="form-group">
-                
-            </div> 
-            <div class="form-group">
-                
-            </div>   
-            <div class="form-group">
-                
-            </div> 
-            <div class="form-group">
-                
-            </div>
-            <div class="form-group">
-                
-            </div>
-            <div class="form-group">
-                <label>Teléfono: {{$paciente->tlf}}</label>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Fecha Nacimiento: {{$paciente->fecha_nac}}</label>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Procedencia:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="procedencia">{{$paciente->procedencia}}</textarea>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Referencia:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="referencia">{{$paciente->referencia}}</textarea>
-            </div>
-            <div class="form-group">
-                <label>Lic: {{$paciente->Lic}}</label>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Enfermedad actual:</label>
-                <textarea  readonly="" class="form-control" style="resize:none;" rows="2" name="enf_actual">{{$historia->enfer_actual}}</textarea>
-            </div>
-            <h5>Diagnóstico:</h5>>
-            <div class="form-group">
-                <label>Descripción:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="3" name="diagnosdescrip">{{$historia->diagnos_descrip}}</textarea>
-            </div>
-            <h5>Fondo de ojo:</h5>
-            <div class="form-group">
-                <label>OD:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="fondo_od">{{$historia->fondo_od}}</textarea>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>OI:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="fondo_oi">{{$historia->fondo_oi}}</textarea>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Lic: {{$paciente->Lic}}</label>
+                </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-3">
-            <h5>Antecedentes Familiares</h5>
-            <div class="form-group">
-                <label>Madre:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecmadre">{{$historia->antec_madre}}</textarea>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Fecha Nacimiento: {{$paciente->fecha_nac}}</label>
+                </div>
             </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Padre:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecpadre">{{$historia->antec_padre}}</textarea>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Procedencia:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="procedencia">{{$paciente->procedencia}}</textarea>
+                </div>
             </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Otros:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecotros">{{$historia->antec_otros}}</textarea>
-            </div>
-            <h5>Otros Antecedentes:</h5>
-            <div class="form-group">
-                <label>Personales:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecpersonal">{{$historia->antec_person}}</textarea>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Oftalmológicos:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecoftal">{{$historia->antec_oftal}}</textarea>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Quirúrgicos:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecquirur">{{$historia->antec_quirur}}</textarea>
-            </div>
-            <h5>Historia Oftalmológica(2):</h5>
-            <div class="form-group">
-                <label>Balance Muscular:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="balmus">{{$historia->bal_musc}}</textarea>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Diagnóstico:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="diagnoshist">{{$historia->diagnostico}}</textarea>
-            </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Plan:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="plan">{{$historia->plan}}</textarea>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Referencia:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="referencia">{{$paciente->referencia}}</textarea>
+                </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-3">
-            <h5>Antecedentes Prenatales:</h5>
-            <div class="row">
-                <div class="form-group col-sm-6">
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Enfermedad actual:</label>
+                    <textarea  readonly="" class="form-control" style="resize:none;" rows="2" name="enf_actual">{{$historia->enfer_actual}}</textarea>        
+                </div>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <h2>Diagnóstico</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                    <h4>Descripción<h4>
+                </div>
+                <div class="form-group">
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="3" name="diagnosdescrip">{{$historia->diagnos_descrip}}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <h4>Fondo de ojo</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">OD:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="fondo_od">{{$historia->fondo_od}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">OI:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="fondo_oi">{{$historia->fondo_oi}}</textarea>
+                </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <h2>Antecedentes Familiares</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Madre:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecmadre">{{$historia->antec_madre}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Padre:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecpadre">{{$historia->antec_padre}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Otros:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecotros">{{$historia->antec_otros}}</textarea>
+                </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <h2>Antecedentes Prenatales</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>N° Embarazo: {{$historia->N_emb}}</label>
                 </div>
-            </div>
                 <div class="form-group">
-                    @if($historia->emb_cont=='1')
-                    <label><input disabled="" type="checkbox" name="control" value="true">controlado</label>
-                    @else
-                    <label> <input disabled="" type="checkbox" checked="checked" name="control" value="true">controlado</label>
-                    @endif
-                </div>
-                <div class="hr-line-dashed"></div>
-            
-            <div class="row">
-                <div class="form-group col-sm-6">
-                    <label>Peso al nacer: {{$historia->talla_nac}}</label>
-                </div>
-                <div class="form-group col-sm-6">
-                    <label>Talla al nacer: {{$historia->peso_nac}}</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-sm-6"">
                     <label>Semanas: {{$historia->semanas}}</label>
                 </div>
             </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Peso al nacer: {{$historia->talla_nac}}</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Talla al nacer: {{$historia->peso_nac}}</label>
+                </div>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Complicaciones Maternas:</label>
+                    <textarea readonly class="form-control" style="resize:none;" rows="2" name="comp_mat">{{$historia->comp_mat}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Complicaciones al Nacer:</label>
+                    <textarea readonly class="form-control" style="resize:none;" rows="2" name="comp_nac">{{$historia->comp_nac}}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-sm-2">
+                <div class="form-group">
+                    @if($historia->emb_cont=='1')
+                        <label><input disabled="" type="checkbox" name="control" value="true">controlado</label>
+                    @else
+                        <label> <input disabled="" type="checkbox" checked="checked" name="control" value="true">controlado</label>
+                    @endif
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-2">
                 <div class="form-group">
                     @if($historia->emb_cesar=='1')
                         <label> <input type="checkbox" name="cesar" value="true">Cesárea</label> 
                     @else
                         <label> <input type="checkbox" name="cesar" checked="checked" value="true">Cesárea</label> 
                     @endif 
-                </div> 
-                <div class="hr-line-dashed"></div>
-                <div class="form-group">
-                    <label>Complicaciones Maternas:</label>
-                    <textarea readonly class="form-control" style="resize:none;" rows="2" name="comp_mat">{{$historia->comp_mat}}</textarea>
-                </div>  
-                <div class="form-group">
-                    <label>Complicaciones al Nacer:</label>
-                    <textarea readonly class="form-control" style="resize:none;" rows="2" name="comp_nac">{{$historia->comp_nac}}</textarea>
-                </div> 
-            <h5>Historia Oftalmológica(1):</h5>
-            <div class="form-group">
-                <input type="text" class="form-control" name="nhistoria" placeholder="N° Historia">
+                </div>
             </div>
-            <div class="form-group">
-                <label>AVSC:</label>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <h2>Otros Antecedentes:</h2>
+                </div>
             </div>
-            <div class="row">
-                <div class="form-group col-sm-6">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Personales:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecpersonal">{{$historia->antec_person}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Oftalmológicos:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecoftal">{{$historia->antec_oftal}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Quirúrgicos:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="antecquirur">{{$historia->antec_quirur}}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <h2>Historia Oftalmológica</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>N° Historia: {{$historia->num_h}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">AVSC:</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OD: {{$historia->avsc_od}}</label>
                 </div>
-                <div class="form-group col-sm-6">
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OI: {{$historia->avsc_oi}}</label>
                 </div>
             </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>AVMC:</label>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">AVMC:</label>
+                </div>
             </div>
-            <div class="row">
-                <div class="form-group col-sm-6">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OD: {{$historia->avmc_od}}</label>
                 </div>
-                <div class="form-group col-sm-6">
-                <   <label>OI: {{$historia->avmc_oi}}</label>
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>OI: {{$historia->avmc_oi}}</label>
                 </div>
             </div>
-            <div class="form-group">
-                <label>Refracción:</label>
-                <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="refraccion">{{$historia->refracc}}</textarea>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                    <label class="font-noraml">Refracción:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="refraccion">{{$historia->refracc}}</textarea>
+                </div>
             </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Anexos Oculares:</label>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                        <label class="font-noraml">Anexos Oculares:</label>
+                </div>
             </div>
-             <div class="row">
-                <div class="form-group col-sm-6">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OD: {{$historia->anex_od}}</label>
                 </div>
-                <div class="form-group col-sm-6">
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OI: {{$historia->anex_oi}}</label>
                 </div>
             </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Biomicroscopia:</label>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Biomicroscopia:</label>
+                </div>
             </div>
-             <div class="row">
-                <div class="form-group col-sm-6">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OD: {{$historia->bio_od}}</label>
                 </div>
-                <div class="form-group col-sm-6">
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OI: {{$historia->bio_oi}}</label>
                 </div>
             </div>
-            <div class="hr-line-dashed"></div>
-            <div class="form-group">
-                <label>Presión Intraocular:</label>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label class="font-noraml">Presión Intraocular:</label>
+                </div>
             </div>
-             <div class="row">
-                <div class="form-group col-sm-6">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OD: {{$historia->presion_od}}</label>
                 </div>
-                <div class="form-group col-sm-6">
+            </div>
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
                     <label>OI: {{$historia->presion_oi}}</label>
                 </div>
             </div>
-            <div class="form-group">
-                <label>Fecha: {{$historia->fecha}}</label>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-3">
+                <div class="form-group">
+                    <label>Fecha: {{$historia->fecha}}</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                    <label class="font-noraml">Balance Muscular:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="balmus">{{$historia->bal_musc}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                    <label class="font-noraml">Diagnóstico:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="diagnoshist">{{$historia->diagnostico}}</textarea>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                    <label class="font-noraml">Plan:</label>
+                    <textarea readonly="" class="form-control" style="resize:none;" rows="2" name="plan">{{$historia->plan}}</textarea>
+                </div>
             </div>
         </div>
     </div>

@@ -196,6 +196,7 @@ class HistoriaNoController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $paciente2=Paciente::find($id);
         $historia=DB::table('h__no__oncols')->where('num_h','=',$id)->get()->first();
         $paciente=DB::table('pacientes')->where('historiano_id','=',$historia->id)->get()->first();
         $new=H_No_Oncol::findOrFail($historia->id);
@@ -277,6 +278,7 @@ class HistoriaNoController extends Controller
         try
         {
             $new2->save();
+            return view('Historias.MostrarHistoriaNo',['paciente'=>$paciente,'historia'=>$historia]);
         }
         catch(\Exception $e)
         {

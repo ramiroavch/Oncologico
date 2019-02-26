@@ -54,7 +54,7 @@
     @endsection
     @section('content')
     <div class="wrapper wrapper-content">
-        <div class="row  border-bottom white-bg dashboard-header">
+        <div class="row border-bottom white-bg dashboard-header">
             <div class="row">
                 <div class="col-lg-4 col-sm-3">
                     <div class="form-group">

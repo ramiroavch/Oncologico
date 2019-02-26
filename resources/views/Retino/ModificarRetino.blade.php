@@ -40,7 +40,7 @@
 	</span></a>
 	<ul class="nav nav-second-level">
     	<li>
-    		<a href="{{route('home')"}}>Buscar Historia</a>
+    		<a href="{{route('home')}}">Buscar Historia</a>
     	</li>
     </ul>
 </li>
